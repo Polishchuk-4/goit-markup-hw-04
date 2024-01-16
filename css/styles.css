@@ -98,7 +98,7 @@ img {
   line-height: 1.5;
   font-weight: 500;
   cursor: pointer;
-  transition: 150ms linear 0s;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -148,6 +148,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:hover,
 .header__link:focus {
@@ -172,8 +173,6 @@ img {
 }
 .header__link--color {
   color: #434455;
-}
-.header__navigation .header__link:active {
 }
 .header__address {
   font-style: normal;
@@ -262,12 +261,14 @@ img {
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .section-three__image {
 }
 .section-three__row {
   padding: 32px 0;
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -318,6 +319,7 @@ img {
 .section-four__column {
   flex-basis: calc((100% - 48px) / 3);
   background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-four__column:hover {
   cursor: pointer;
