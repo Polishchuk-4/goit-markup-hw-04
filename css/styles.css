@@ -47,6 +47,7 @@ img {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.04em;
+  transition: 0.5s linear 0s;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -97,6 +98,7 @@ img {
   line-height: 1.5;
   font-weight: 500;
   cursor: pointer;
+  transition: 150ms linear 0s;
 }
 .button:hover,
 .button:focus {
@@ -276,12 +278,31 @@ img {
 }
 .section-three__text {
 }
+.section-three__link {
+}
 .section-three__icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
+.section-three__link {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.section-three__icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #f4f4fd;
+}
+
 /*-------- section-4 --------*/
 
 .section-four {
@@ -299,6 +320,31 @@ img {
 .section-four__column {
   flex-basis: calc((100% - 48px) / 3);
   background: #fff;
+}
+
+.section-four__box {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+.section-four__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+.section-four__box:hover {
+  cursor: pointer;
+}
+.section-four__box:hover .section-four__overlay {
+  transform: translateY(0);
+}
+.section-four__overlay {
 }
 .section-four__image {
 }
