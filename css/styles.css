@@ -115,6 +115,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*-------- header --------*/
 
 .header {
@@ -224,6 +225,15 @@ img {
 }
 .section-two__column {
   flex-basis: calc((100% - 3 * 24px) / 4);
+}
+.section-two__icon-container {
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+}
+.section-two__icon {
 }
 .section-two__title-three {
   margin-bottom: 8px;
