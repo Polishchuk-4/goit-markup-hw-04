@@ -367,16 +367,45 @@ img {
   padding: 100px 0;
   background: #2e2f42;
 }
+.footer__row {
+  display: flex;
+  column-gap: 120px;
+}
 .footer__logo {
   display: inline-block;
-  margin-bottom: 16px;
 }
 .footer__logo--color {
   color: #f4f4fd;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 .footer__text {
   width: 264px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.footer__text--weight {
+  font-weight: 560;
+}
+.footer__icon-container {
+  display: flex;
+  column-gap: 16px;
+}
+.footer__link {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.footer__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #f4f4fd;
 }
