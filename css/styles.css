@@ -265,14 +265,23 @@ img {
 }
 .section-three__row {
   padding: 32px 0;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 .section-three__title-three {
-  margin-bottom: 8px;
 }
 .section-three__text {
 }
-
+.section-three__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 /*-------- section-4 --------*/
 
 .section-four {
