@@ -138,6 +138,7 @@ img {
   color: #2e2f42;
 }
 .header__link {
+  position: relative;
   display: inline-block;
   padding: 24px 0;
   font-size: 16px;
@@ -149,6 +150,20 @@ img {
 .header__link:focus {
   color: #404bbf;
 }
+.header__link--active {
+  color: #404bbf;
+}
+.header__link--active::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #404bbf;
+}
+
 .header__link--weight {
   font-weight: 500;
 }
@@ -176,7 +191,14 @@ img {
 .section-one {
   padding: 188px 0;
   text-align: center;
-  background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/sectionone/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .section-one .container {
   display: flex;
