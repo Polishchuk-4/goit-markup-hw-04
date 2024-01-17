@@ -288,24 +288,30 @@ img {
 }
 .section-three__link {
 }
-.section-three__icon-container {
+.section-three__icons-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
-.section-three__link {
-  position: relative;
+.section-three__icon-container {
   width: 40px;
   height: 40px;
+}
+.section-three__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
 }
+.section-three__link:hover,
+.section-three__link:focus {
+  background-color: #404bbf;
+}
 .section-three__icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   fill: #f4f4fd;
 }
 
