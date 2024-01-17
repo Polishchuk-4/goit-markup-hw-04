@@ -306,6 +306,7 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-three__link:hover,
 .section-three__link:focus {
@@ -330,6 +331,10 @@ img {
   gap: 48px 24px;
 }
 .section-four__column {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
   flex-basis: calc((100% - 48px) / 3);
   background: #fff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -341,13 +346,7 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .section-four__column:hover .section-four__overlay {
-  transform: translateY(0);
-}
-.section-four__box {
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
+  transform: translateY(0%);
 }
 .section-four__overlay {
   position: absolute;
