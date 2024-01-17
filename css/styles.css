@@ -387,7 +387,7 @@ img {
 }
 .footer .container {
   display: flex;
-  justify-content: baseline;
+  align-items: baseline;
 }
 .footer__logo {
   margin-bottom: 16px;
@@ -408,7 +408,7 @@ img {
   letter-spacing: 0.02em;
 }
 .footer__text--weight {
-  font-weight: 560;
+  font-weight: 500;
 }
 .footer__icons-container {
   display: flex;
@@ -432,7 +432,7 @@ img {
 }
 .footer__link:hover,
 .footer__link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 .footer__icon {
   fill: #f4f4fd;
