@@ -33,6 +33,18 @@ p {
 img {
   display: block;
 }
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+input {
+  font-family: inherit;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 .page__container {
   min-height: 100vh;
   display: flex;
